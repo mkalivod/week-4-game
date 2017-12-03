@@ -20,11 +20,6 @@ header {
     width: 100%
 }
 
-#spacer {
-    margin-top:45px;
-    margin-bottom: 40px;
-    height: 15px;
-}
 
 #webpage-title {
     font-family: 'Audiowide', cursive;
@@ -40,9 +35,13 @@ header {
     letter-spacing: 5px;
 }
 
+#title.italic {
+    font-style: italic;
+}
 
 
-.stats_card {
+
+.character-card {
     border: 5px solid dodgerblue;
     background-color: black;
     padding: 10px;
@@ -52,16 +51,16 @@ header {
     font-family: 'Russo One', sans-serif;
 }
 
-.stats_card:hover {
+.character-card:hover {
     background-color: dodgerblue;
     border: 9px solid black;
 }
- .character-img img {
-    width: 50px;
-    height: 100px;
-}
+ img {
+     width: 250px;
+     height: 140px;
+ }
 
-#attack-btn {
+#attack {
     margin: 30px;
     font-weight: bold;
     font-variant: small-caps;
@@ -74,7 +73,7 @@ header {
 }
 
 
-#attack-btn:hover {
+#attack:hover {
     width: 300px;
     height: 100px;
     background-color: rgb(80, 3, 3);

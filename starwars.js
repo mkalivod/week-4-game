@@ -9,12 +9,10 @@ var readyToAttack = false;
 var bodyCount = 0;
 
 
-
-// Declare Global Variables for Character Attributes
 var yourHealth;
 var enemyHealth;
 
-// Enemy Counter Attacks
+// Enemy Attacks
 var enemyAttack;
 var lukeCountAttack = 9;
 var obiCountAttack = 12;
@@ -35,17 +33,16 @@ var saberSound = new Audio("http://soundbible.com/mp3/Lightsaber%20Clash-SoundBi
 
 
 
-// ------------------------ Game Functions are below ------------------------
+// ---- Game Script----
 $(document).ready(function(){
 
-	// Move Characters to Enemy Div on Selection of your character
+	// Move enemies to "enemies available for attack" section
 	$(".character-card").on("click", function(){
 		if(charSelected == false){
 
-			// Remove any old Battle commentary
 			$('.commented').remove()
 			
-			// Blindly move all characters to enemy
+			// Move all characters to enemy
 			$("#obi").appendTo("#enemy_list").addClass("enemy_character-card");
 			$("#luke").appendTo("#enemy_list").addClass("enemy_character-card");
 			$("#sidi").appendTo("#enemy_list").addClass("enemy_character-card");
@@ -106,8 +103,6 @@ $(document).ready(function(){
 		}
 			
 	});
-
-
 
 
 	// Begin the battle
