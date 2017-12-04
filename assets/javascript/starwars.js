@@ -1,3 +1,7 @@
+
+
+
+
 var charSelected = false;
 var yourChar;
 
@@ -12,6 +16,13 @@ var bodyCount = 0;
 var yourHealth;
 var enemyHealth;
 
+// Character selected 
+var yourAttack = 0;
+var yourBaseAttack;
+var lukeBaseAttack = 20;
+var obiBaseAttack = 8;
+var sidiBaseAttack = 6;
+var maulBaseAttack = 9;
 // Enemy Attacks
 var enemyAttack;
 var lukeCountAttack = 9;
@@ -19,13 +30,6 @@ var obiCountAttack = 12;
 var sidiCountAttack = 17;
 var maulCountAttack = 21;
 
-// Your Base Attacks
-var yourAttack = 0;
-var yourBaseAttack;
-var lukeBaseAttack = 20;
-var obiBaseAttack = 8;
-var sidiBaseAttack = 6;
-var maulBaseAttack = 9;
 
 
 // Import Light Saber Sound
